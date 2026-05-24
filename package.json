@@ -1,0 +1,12 @@
+{
+  "name": "scan-and-dine",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix apps/api\" \"npm run dev --prefix apps/client\" \"npm run dev --prefix apps/admin\"",
+
+    "install-all": "npm install --prefix apps/api && npm install --prefix apps/client && npm install --prefix apps/admin"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
