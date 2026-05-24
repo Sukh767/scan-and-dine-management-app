@@ -1,12 +1,28 @@
 {
-  "name": "scan-and-dine",
-  "private": true,
-  "scripts": {
-    "dev": "concurrently \"npm run dev --prefix apps/api\" \"npm run dev --prefix apps/client\" \"npm run dev --prefix apps/admin\"",
-
-    "install-all": "npm install --prefix apps/api && npm install --prefix apps/client && npm install --prefix apps/admin"
+  "name": "scan-dine",
+  "version": "1.0.0",
+  "description": "A full-stack MERN-based smart restaurant platform built with a scalable monorepo architecture.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
   },
+  "scripts": {
+  "dev": "concurrently \"npm run dev --prefix apps/api\" \"npm run dev --prefix apps/client\" \"npm run dev --prefix apps/admin\"",
+  "install-all": "npm install --prefix apps/api && npm install --prefix apps/client && npm install --prefix apps/admin"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sukh767/scan-and-dine-management-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sukh767/scan-and-dine-management-app/issues"
+  },
+  "homepage": "https://github.com/Sukh767/scan-and-dine-management-app#readme",
   "devDependencies": {
-    "concurrently": "^9.0.1"
+    "concurrently": "^9.2.1"
   }
 }
